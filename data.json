@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "$2b$10$UnX6H7vF8G..." 
+    },
+    {
+      "id": 2,
+      "username": "user12342",
+      "email": "user@example.com",
+      "password": "$2b$10$XyZ9W8vV7A...",
+      "name": "Usuário Teste"
+    }
+  ],
+  "config": {
+    "appName": "LocalMarket",
+    "version": "1.0.0",
+    "theme": "dark"
+  }
+}
