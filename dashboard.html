@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+     <!-- Link para o script do dashboard -->
+  <script type="module" src="./src/dashboard.js"></script>
+</body>
+</html>
+    
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Hello, Bootstrap and Vite!</h1>
+      <button class="btn btn-primary">Primary button</button>
+    </div>
+  </body>
+</html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - LocalMarket</title>
+  <link rel="stylesheet" href="loja.css">
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-card">
+      <h1>Bem-vindo(a) à loja</h1>
+      <p id="welcomeText">Carregando...</p>
+      <button id="btnSair">Sair</button>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const usuario = localStorage.getItem('usuarioLogado');
+      if (!usuario) {
+        window.location.href = 'index.html';
+        return;
+      }
+
+      document.getElementById('welcomeText').textContent = `Olá, ${usuario}! Você está logado.`;
+      document.getElementById('btnSair').addEventListener('click', () => {
+        localStorage.removeItem('usuarioLogado');
+        window.location.href = 'index.html';
+      });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+  // 1. Busca o nome do usuário que você salvou no login
+  const usuarioLogado = localStorage.getItem('usuarioLogado');
+
+  // 2. Segurança básica: se não houver usuário logado, manda de volta para o login
+  if (!usuarioLogado) {
+    window.location.href = 'index.html'; // Altere para o nome da sua página de login
+    return;
+  }
+
+  // 3. Seleciona o elemento HTML e injeta o nome do usuário nele
+  const nomeUsuarioSpan = document.getElementById('nomeUsuario');
+  if (nomeUsuarioSpan) {
+    nomeUsuarioSpan.textContent = usuarioLogado;
+  }
+
+  // 4. Configura o botão de "Sair" (Logout)
+  const btnSair = document.getElementById('btnSair');
+  if (btnSair) {
+    btnSair.addEventListener('click', () => {
+      localStorage.removeItem('usuarioLogado'); // Apaga o login
+      window.location.href = 'index.html'; // Redireciona
+    });
+  }
+});
+
+  </script>
+</body>
+</html>
