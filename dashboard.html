@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+    <title>Loja online</title>
      <!-- Link para o script do dashboard -->
   <script type="module" src="./src/dashboard.js"></script>
 </body>
@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
+      <h1>Sair</h1>
       <button class="btn btn-primary">Primary button</button>
     </div>
   </body>
@@ -48,7 +48,7 @@
     });
     document.addEventListener('DOMContentLoaded', () => {
   // 1. Busca o nome do usuário que você salvou no login
-  const usuarioLogado = localStorage.getItem('usuarioLogado');
+  const usuarioLogado = localStorage.getItem('usuarioLogado com susesso!');
 
   // 2. Segurança básica: se não houver usuário logado, manda de volta para o login
   if (!usuarioLogado) {
@@ -67,11 +67,11 @@
   if (btnSair) {
     btnSair.addEventListener('click', () => {
       localStorage.removeItem('usuarioLogado'); // Apaga o login
-      window.location.href = 'index.html'; // Redireciona
+      window.location.href = 'index.html'; // Redireciona para o portal com cor.
     });
   }
 });
-
-  </script>
+// Escript é o js caminhopara usuario.
+  </script>  
 </body>
 </html>

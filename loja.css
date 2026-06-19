@@ -9,7 +9,7 @@ body {
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
   color: #f4f4f4;
   background: linear-gradient(180deg, rgba(190, 216, 216, 0.705), rgba(224, 240, 237, 0.7)),
-    url("assets/foto/louis-vuitton-perfume-imagination--LP0219_PM1_Interior view.avif") center/cover no-repeat fixed;
+    url("louis-vuitton-perfume-imagination--LP0219_PM1_Interior view.avif") center/cover no-repeat fixed;
 }
 body {
   display: flex;
@@ -49,7 +49,7 @@ body {
 }
 label {
   font-weight: 300;
-  color: #301d1d;
+  color: #d8d8d8;
 }
 input {
   width: 100%;
@@ -72,7 +72,7 @@ button {
   background: linear-gradient(135deg, #3d40413a, #67666b);
   color: #fff;
   font-size: 1rem;
-  font-weight: 23400;
+  font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
@@ -96,4 +96,7 @@ button:hover {
   }
   
 }
+/* cleaned stray rules */
+
+
 
