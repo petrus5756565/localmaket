@@ -1,0 +1,42 @@
+* {
+
+    padding: 0,
+
+    margin:0%
+    
+    box-sizing: border-box;
+
+
+    font-family: Arial, helvetica, sans-serif
+
+
+}
+
+
+#pedido{
+
+    display: nome;
+
+    position:absolute;
+
+    bottom: 10px
+
+    left: 50;
+
+}
+
+.btn-word{
+
+     border: none;
+
+     padding: 10px;
+
+     top: 10px;
+
+}
+
+
+
+
+    
+

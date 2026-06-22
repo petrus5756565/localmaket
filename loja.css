@@ -8,23 +8,34 @@ body {
   min-height: 100%;
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
   color: #f4f4f4;
-  background: linear-gradient(180deg, rgba(190, 216, 216, 0.705), rgba(224, 240, 237, 0.7)),
-    url("louis-vuitton-perfume-imagination--LP0219_PM1_Interior view.avif") center/cover no-repeat fixed;
+  background: linear-gradient(170deg, rgba(190, 216, 216, 0.705), rgba(226, 240, 237, 0.7)),
+    url("https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dw529cf3bb/images/hi-res-BR/Frag/2026/Rabanne/Invictus%20elixir%20parfum/3349668664733-2.png?sw=556&sh=680&sm=fit") center/cover no-repeat fixed;
 }
 body {
   display: flex;
   min-height: 100vh;
 }
 .login-page {
+
+  .login-page {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row; /* Garante que os itens fiquem lado a lado */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center; /* Alinha horizontalmente ao centro */
   width: 100%;
   padding: 25px 23px;
+  gap: 15px; /* Cria um espaço opcional de 15px entre os itens */
+}
+
+  
+  
+
+  
+  
 }
 .login-card {
   width: 100%;
-  max-width: 420px;
+  max-width: 413px;
   padding: 40px;
   border-radius: 13px;
   background: rgba(34, 39, 41, 0.75);
